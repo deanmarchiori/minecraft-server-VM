@@ -1,11 +1,11 @@
 # Setting up a Minecraft gaming server on an Azure VM
 
-This guide is a rough outline of steps I took to spin up and configure a Microsoft Azure VM to run a public Minecraft server (for my 6 year old son and his friends, not for me obviously).    
+This is a rough guide of the steps I took to spin up and configure a Microsoft Azure VM to run a public Minecraft server (for my 6 year old son and his friends, not for me obviously).    
 
 ![](img/mc.png)
 
 # Set up VM  
-Any Virtual Machine will do, but I have included part of the resource template file for my setup as `template.json`   
+Any Virtual Machine will do, but I have chosen the use a Microsoft  Azure VM. For more details see: `template.json`   
 
 Type | Value  
 ----|----  
@@ -28,7 +28,7 @@ sudo ufw status verbose
 ```
 ## Storage  
 
-Adding persistent storage so prevent wiping is VM is stopped etc.   
+Adding persistent storage to prevent loss if VM is stopped etc.   
 
 Find disk
 
@@ -36,7 +36,7 @@ Find disk
 lsblk -o NAME,HCTL,SIZE,MOUNTPOINT | grep -i "sd"
 ```
 
-Format the disk  (replace `sdd` with however it is labelled above)  
+Format and partition the disk  (replace `sdd` with however it is labelled above)  
 
 ```
 sudo parted /dev/{sdd} --script mklabel gpt mkpart xfspart xfs 0% 100%
