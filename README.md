@@ -19,7 +19,7 @@ Dedicated Disk | Premium_LRS 20GB
 
 ## Network Security Rules  
 
-The Minecraft server, when launched, will listen on port 25565 by default. Create in inbound security rule on your VM to allow tcp traffic on this port.  
+The Minecraft server, when launched, will listen on port 25565 by default. Create an inbound security rule on your VM to allow tcp traffic on this port.  
 
 ![](img/port.png)
 
