@@ -21,7 +21,7 @@ Dedicated Disk | Premium_LRS 20GB
 
 The Minecraft server, when launched, will listen on port 25565 by default. Create in inbound security rule on your VM to allow tcp traffic on this port.  
 
-![](port.png)
+![](img/port.png)
 
 ## Firewall  
 
@@ -135,11 +135,11 @@ To connect, you will need to sign-up for a microsoft account and purchase Minecr
 
 Select multiplayer  
 
-![](start.png)    
+![](img/start.png)    
 
 Add the public IP of your server and connect.  
 
-![](connect.png)
+![](img/connect.png)
 
 
 # References  
