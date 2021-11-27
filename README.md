@@ -15,7 +15,13 @@ Dedicated Disk | Premium_LRS 20GB
 
 ![topology](img/topology.svg)  
 
-# Configure VM  
+# Configure VM    
+
+## Network Security Rules  
+
+The Minecraft server, when launched, will listen on port 25565 by default. Create in inbound security rule on your VM to allow tcp traffic on this port.  
+
+![](port.png)
 
 ## Firewall  
 
@@ -122,6 +128,19 @@ java -Xms1024M -Xmx2G -jar server.jar
 ```
 
 Use `Ctrl+A+D` to detach from `screen` and go back to terminal. `screen -r` will allow re-attach to server screen.  
+
+## Connect  
+
+To connect, you will need to sign-up for a microsoft account and purchase Minecraft. You can then download the launcher and either play in single player mode locally, or use your public Minecraft server to play multiplayer.    
+
+Select multiplayer  
+
+![](start.png)    
+
+Add the public IP of your server and connect.  
+
+![](connect.png)
+
 
 # References  
 
