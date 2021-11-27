@@ -135,7 +135,7 @@ To connect, you will need to sign-up for a microsoft account and purchase Minecr
 
 Select multiplayer  
 
-![](img/start.png)    
+![](img/start.jpg)    
 
 Add the public IP of your server and connect.  
 
